@@ -96,5 +96,36 @@
             <img src="./gallery/photo-9.png" alt="нет картинки">
         </div>
     </section>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Чтобы сделать заказ, расскажите нам о себе</h2>
+            <form class="form" action="#">
+                <div class="form-inputs">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="email" placeholder="Электронная почта" required>
+                    <input placeholder="Удобное время для звонка" required onfocus="this.type='datetime-local';this.showPicker?.()">
+                 </div>
+
+                <label class="form-text">
+                    Мы перезвоним Вам в удобное время, <br/> 
+                    чтобы уточнить Ваши пожелания
+                </label>
+
+                <div class="form-politic">
+                    <input type="checkbox" required>
+                    <p>Нажимая на кнопку вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></p>
+                </div>
+
+                <button class="form-btn">Cделать заказ</button>
+            </form>
+            <span class="button-close">&#x2715;</span>
+        </div>
+        <img src="./gallery/leaf-2.png" alt="нет картинки" class="modal-leaf1">
+        <img src="./gallery/leaf-3.png" alt="нет картинки" class="modal-leaf2">
+        <img src="./gallery/berry-2.png" alt="нет картинки" class="modal-berry1">
+        <img src="./gallery/berry-3.png" alt="нет картинки" class="modal-berry2">
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
